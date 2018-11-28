@@ -1,0 +1,21 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "app for tracking repositoies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch:tickets": "QUERY='assignee=frank AND status=\"To Do\"' DEST=~/Sites/041018/src/db/ node ./commands/fetch_tickets",
+    "commit:time": "DIR=~/Sites/dugout-mena-v1/ node ./playground/fetch",
+    "commit:version": "DIR=~/Sites/dugout-mena-v2 node ./commands/track-git-version"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.1.0",
+    "lodash": "^4.17.11",
+    "pug": "^2.0.3",
+    "request": "^2.88.0"
+  }
+}
