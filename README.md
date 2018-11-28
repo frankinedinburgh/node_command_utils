@@ -9,6 +9,10 @@
 
 
 
+before generating an email fetch tickets using 
+
+`npm run fetch:tickets`
+
 ##### create a .env with the below variables and place in the root of this directory
 ```apacheconfig
 JIRA_USERNAME=jirausername

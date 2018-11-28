@@ -1,0 +1,72 @@
+[
+    {
+        "key": "MENA-40",
+        "summary": "CLONE Dugout MENA V2 - some videos not loading, possible caching issue",
+        "description": null,
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "MENA-34",
+        "summary": "ALTV Web V2: DUGOUT MENA - Dugout link not working in responsive mode",
+        "description": null,
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "MENA-25",
+        "summary": "Front End: Playlist icon sometimes not displaying on player even when a playlist is bound to the player",
+        "description": null,
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "MENA-4",
+        "summary": "ALTV Web V2: Dugout MENA - Videos jitter when I navigate away from page",
+        "description": null,
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "ALTV-544",
+        "summary": "ALTV Web V2: Profile - Competences - Your profile completion increases by 4% instead of 5%",
+        "description": "*Steps to reproduce:*\r\n# Navigate to v2.altv.com and log in\r\n# Go to Your Profile\r\n# Click 'Add now' to add a new competence\r\n# Add just 1 competence\r\n\r\n*Expected result:* \r\nYour profile completion increases by 5%.\r\n\r\n*Actual result:*\r\nYour profile completion increases by 4%. Should increase by 5%. See images attached.\r\n\r\ncc: [~brendan]",
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "ALTV-543",
+        "summary": "ALTV Web V2: Profile - Work Experience - NOT able to add an End Date which later than today's date",
+        "description": "*Steps to reproduce:*\r\n# Navigate to v2.altv.com and log in\r\n# Go to Your Profile\r\n# Go Work Experience and click 'Add new'\r\n# Put in an End Date which later than today's date\r\n\r\n*Expected result:* \r\nYou are able to add an End Date which later than today's date, eg: 14/Feb/2020.\r\n\r\n*Actual result:*\r\nYou are NOT able to add an End Date which later than today's date. See images attached.\r\n\r\ncc: [~brendan]",
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "ALTV-542",
+        "summary": "ALTV Web V2: Profile - Work Experience - 'End Date' text-box should turn red if 'Start Date' is later than it",
+        "description": "*Steps to reproduce:*\r\n# Navigate to v2.altv.com and log in\r\n# Go to Your Profile\r\n# Go Work Experience and click 'Add new'\r\n# Put in a Start Date \r\n# Put in an End Date which is earlier than the start date\r\n\r\n*Expected result:* \r\nThe 'End Date' text-box should turn red if 'Start Date' is later than it. This will indicate to the user that they cannot pick an 'End Date' earlier than the 'Start Date'.\r\n\r\n*Actual result:*\r\nThe 'End Date' text-box remains green even if 'Start Date' is later than it.\r\n\r\ncc: [~brendan]",
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "ALTV-541",
+        "summary": "ALTV Web V2: Profile - Work Experience - 'Start Date' text-box has no overlay text with today's date",
+        "description": "*Steps to reproduce:*\r\n# Navigate to v2.altv.com and log in\r\n# Go to Your Profile\r\n# Go to Work Experience and click Add New\r\n# Have a look at the 'Start - End Date' text-box\r\n\r\n*Expected result:* \r\nThe Start Date text-box should have an overlay text with today's date, just like the 'End Date'\r\n\r\n*Actual result:*\r\nThe 'Start Date' text-box has no overlay text with today's date\r\n\r\ncc: [~brendan]",
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "ALTV-540",
+        "summary": "ALTV Web V2: Profile - Work Experience - 'Add now' button has no shadow underneath",
+        "description": "*Steps to reproduce:*\r\n# Navigate to v2.altv.com and log in\r\n# Go to Your Profile\r\n# Go to Work Experience and click Add New\r\n# Have a look at the 'Add now' button\r\n\r\n*Expected result:* \r\nThe 'Add now' button should have a shadow underneath it, just like the 'Cancel' button.\r\n\r\n*Actual result:*\r\nThe 'Add now' button does not have a shadow underneath it.\r\n\r\ncc: [~brendan]",
+        "assignee": "frank",
+        "status": "To Do"
+    },
+    {
+        "key": "ALTV-539",
+        "summary": "ALTV Web V2: Profile - Work Experience - Clicking 'Add new' opens up all text-boxes in red outline",
+        "description": "*Steps to reproduce:*\r\n# Navigate to v2.altv.com and log in\r\n# Go to Your Profile\r\n# Go to Work Experience and click Add New\r\n\r\n*Expected result:* \r\nClicking 'Add new' should just open up all the text-boxes as normal, not with a red-outline. \r\n\r\n*Actual result:*\r\nClicking 'Add new' opens up all text-boxes in red outline. This makes it look like you have input something wrong even though you have not.\r\n\r\ncc: [~brendan]",
+        "assignee": "frank",
+        "status": "To Do"
+    }
+]

@@ -1,0 +1,89 @@
+doctype transitional
+html(lang="en")
+    head
+        title= name
+        style(type="text/css").
+            table {
+                display: table;
+                width: 100%;
+                border-spacing: 2px;
+                border-collapse: collapse;
+                border: 1px solid #f2f2f2;
+            }
+
+            th {
+                text-transform: uppercase;
+                padding-right:4px;
+                font-size: xx-small;
+            }
+            th, td {
+                font-size: 12px;
+                text-align: left;
+                border-right: 1px solid #f2f2f2;
+                white-space: nowrap;
+            }
+
+            tr {
+                margin-bottom: 10px;
+                display: table-row;
+                vertical-align: inherit;
+            }
+
+
+    body
+        #container.col
+            table(cellpadding="5", cellspacing="5", align="left")
+                thead
+                    tr
+                        th.
+                            Ticket
+                        th.
+                            Summary
+                        th.
+                            Assignee
+
+                tbody
+                    each val in tickets
+                        tr
+                            td(cellpadding="10")
+                                a(href='https://emergentdatagroup.atlassian.net/browse/' + val.key)= val.key
+                            td= val.summary
+
+                            td= val.assignee
+
+
+            p.
+                &nbsp;
+
+            table(style='display: table-cell;', cellpadding="5", cellspacing="5", align="left")
+                tr
+                    td.
+                        Size
+                    td= weight
+                tr
+                    td.
+                        Branch
+                    td= branch
+
+                tr
+                    td.
+                        Commit
+                    td= commit
+                tr
+                    td.
+                        Date
+                    td= date
+                tr
+                    td.
+                        Deployed at
+                    td= time
+
+
+            p.
+                &nbsp;
+
+            strong.
+                version to test:
+            br
+
+            small= message

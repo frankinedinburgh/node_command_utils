@@ -4,10 +4,12 @@
   "description": "app for tracking repositoies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "fetch:tickets": "QUERY='assignee=frank AND status=\"To Do\"' DEST=~/Sites/041018/src/db/ node ./commands/fetch_tickets",
-    "commit:time": "DIR=~/Sites/dugout-mena-v1/ node ./playground/fetch",
-    "commit:version": "DIR=~/Sites/dugout-mena-v2 node ./commands/track-git-version"
+    "fetch:tickets": "QUERY='assignee=frank AND status=\"To Do\"' DEST=./commands/ node ./commands/fetch_tickets",
+    "commit:time": "DIR=~/Sites/dugout-mena-v2/ node ./playground/fetch",
+    "commit:version": "DIR=~/Sites/dugout-mena-v2 node ./commands/track-git-version",
+    "deploy:sandbox": "DIR=~/Sites/dugout-mena-v2 LOCATION=sandbox node ./commands/deploy",
+    "deploy:frank": "DIR=~/Sites/dugout-mena-v2 LOCATION=frank node ./commands/deploy",
+    "mail": "DIR=~/Sites/dugout-mena-v2 SUBJECT='tickets deployed to mean-v2' node ./commands/mail"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "axios": "^0.18.0",
     "dotenv": "^6.1.0",
     "lodash": "^4.17.11",
+    "nodemailer": "^4.7.0",
     "pug": "^2.0.3",
     "request": "^2.88.0"
   }

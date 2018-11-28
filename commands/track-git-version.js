@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const file = path.join(process.env.DIR, '/dist/index.html');
 const timeOfCommit = require('../modules/time_of_commit')
-const getBranch = require('../modules/get_branch')
+const { getBranch } = require('../modules/get_branch')
 const currentTime = require('../modules/current_time')
 
 
