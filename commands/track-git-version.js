@@ -20,7 +20,8 @@ getBranch().then(res => {
         const obj = Object.assign(res, data);
         const deployedAt= currentTime();
         const message = `\n<!-- time_of_deployment: ${deployedAt} branch: ${obj.branch} commit: ${obj.commit} date: ${obj.date} time: ${obj.time} -->`;
-        appendGitVersionToIndex(file, message)
+        return message;
+        //appendGitVersionToIndex(file, message)
     })
 });
 

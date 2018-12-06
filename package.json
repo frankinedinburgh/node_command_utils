@@ -4,12 +4,14 @@
   "description": "app for tracking repositoies",
   "main": "index.js",
   "scripts": {
-    "fetch:tickets": "QUERY='assignee=frank AND status=\"To Do\"' DEST=./commands/ node ./commands/fetch_tickets",
+    "fetch:tickets": "QUERY='assignee=frank AND status in (\"Code Test\")' DEST=./commands/ node ./commands/fetch_tickets",
+    "move:tickets": "cp commands/tickets.json ~/Sites/041018/src/db/",
     "commit:time": "DIR=~/Sites/dugout-mena-v2/ node ./playground/fetch",
     "commit:version": "DIR=~/Sites/dugout-mena-v2 node ./commands/track-git-version",
     "deploy:sandbox": "DIR=~/Sites/dugout-mena-v2 LOCATION=sandbox node ./commands/deploy",
     "deploy:frank": "DIR=~/Sites/dugout-mena-v2 LOCATION=frank node ./commands/deploy",
-    "mail": "DIR=~/Sites/dugout-mena-v2 SUBJECT='tickets deployed to mean-v2' node ./commands/mail"
+    "mail": "DIR=~/Sites/dugout-mena-v2 SUBJECT='DUGOUT MENA V2 JWPLAYER deployed' node ./commands/mail",
+    "tickets": "npm-run-all --serial fetch:tickets move:tickets"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +22,8 @@
     "nodemailer": "^4.7.0",
     "pug": "^2.0.3",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

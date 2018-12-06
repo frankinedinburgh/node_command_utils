@@ -1,13 +1,14 @@
-const pug = require('pug');
-const path = require('path');
+const pug = require('pug')
+const path = require('path')
 const nodemailer = require('nodemailer');
-require('dotenv').config({path: path.join(__dirname, '../.env')});
+require('dotenv').config({path: path.join(__dirname, '../.env')})
 const tickets = require('./tickets.json')
-const emails = require('../modules/emails');
+const emails = require('../modules/emails')
 const timeOfCommit = require('../modules/time_of_commit')
 const { getBranch } = require('../modules/get_branch')
 const size = require('../modules/size')
 const currentTime = require('../modules/current_time')
+
 
 
 
@@ -19,12 +20,12 @@ getBranch().then(res => {
 		const deployedAt= currentTime();
 		const {branch, commit, date, time} = obj;
 		const weight = size(path.join(process.env.DIR, '/dist'));
-		const message = `\n<!-- time_of_deployment: ${deployedAt} branch: ${branch} commit: ${commit} date: ${date} time: ${time} -->`;
+		const message = `\n<-- branch: ${branch} commit: ${commit} -->`;
 		const options = {
 			debug: false,
 			pretty: true
 		};
-		const compiledFunction = pug.compileFile('views/email.pug', options);
+		const compiledFunction = pug.compileFile('views/tickets.pug', options);
 		const transporter = nodemailer.createTransport({
 			host: 'smtp.office365.com',
 			port: 587,

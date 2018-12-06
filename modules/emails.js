@@ -2,7 +2,7 @@ const emails = {
     cc: [
          //'hugh@altv.com',
          //'ciara@altv.com',
-         //'neil@altv.com',
+         'neil@altv.com',
          //'cian@altv.com',
          //'balazs@altv.com',
          'frank@altv.com',
@@ -10,10 +10,12 @@ const emails = {
          //'esidor@altv.com',
     ],
     to: [
-        'frank@altv.com',
-        // 'kyran@altv.com',
-        // 'brendan@altv.com',
-        // 'declan@altv.com',
+        //'frank@altv.com',
+				//'balazs@altv.com',
+         'kyran@altv.com',
+				 'esidor@altv.com',
+         //'brendan@altv.com',
+         'declan@altv.com',
     ]
 }
 
