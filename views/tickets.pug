@@ -27,6 +27,7 @@ html(lang="en")
                 vertical-align: inherit;
             }
 
+
     body
         #container.col
             table(cellpadding="5", cellspacing="5", align="left")
@@ -42,13 +43,13 @@ html(lang="en")
                             Assignee
 
                 tbody
-                    each val in tickets
+                    each val in tickets.issues
                         tr
                             td(cellpadding="10")
                                 a(href='https://emergentdatagroup.atlassian.net/browse/' + val.key)= val.key
-                            td= val.summary
-                            td= val.status
-                            td= val.assignee
+                            td= val.fields.summary
+                            td= val.fields.status.name
+                            td= val.fields.assignee.name
 
 
             p.
@@ -68,10 +69,7 @@ html(lang="en")
                     th.
                         Commit
                     td= commit
-                tr
-                    th.
-                        Date
-                    td= date
+
                 tr
                     th.
                         Deployed at
@@ -85,7 +83,8 @@ html(lang="en")
                 version to test:
             br
 
-            small= message
+
+            small #{message}
 
 
 

@@ -1,65 +1,48 @@
-[
-    {
-        "key": "MENA-49",
-        "summary": "Back End - adapt APIs to include videos from JW player",
-        "description": "As a user (back end developer) i want to adapt APIs to include videos from JW player\r\n\r\n\r\nAcceptance criteria: \r\n\r\n- API  includes videos from JW Player including trending videos on homepage\r\n- Both Ooyala and JW player videos are returned\r\n\r\n",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-41",
-        "summary": "CLONE Dugout Mena V2 - videos not clickable in carousels",
-        "description": "Steps to reproduce:\n\ngo to altv.com/dugout\nClick on a video in a carousel\n\nExpected result:\nVideo is clickable and loads and plays on page\n\nActual result:\nVideo is not clickable, does not load or play\n\ncc [~Kyran] [~declan] [~frank]\n\nTest on: https://sandbox.altv.com/dugout/",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-26",
-        "summary": "Web: Tracking Deployments to Dugout MENA",
-        "description": "Test on: https://sandbox.altv.com/dugout/",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-23",
-        "summary": "Web: Error when scrolling. Two players are playing at the same time ",
-        "description": "Test on: [https://sandbox.altv.com/dugout/|https://sandbox.altv.com/dugout]",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-22",
-        "summary": "Web -  Display ads work on first player but not on all the players on the page ",
-        "description": "Test on: [https://sandbox.altv.com/dugout/]",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-19",
-        "summary": "Web: Review and integrate dev.dugout.com api calls and copy calls to dugout mena",
-        "description": null,
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-18",
-        "summary": "Web: Reduce page size for performance",
-        "description": "Test on: [https://sandbox.altv.com/dugout/]",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-14",
-        "summary": "WEB: Create ads via DFP on Dugout Mena V2 page - video and display",
-        "description": "As a user i want to be able to serve DFP ads on display and video on the Dugout MENA page\n\n*Acceptance criteria:*\n\nCheck with Eric what to build before we start to confirm exact requirements and amend ticket accordingly (and liaise with marino who has built this for Dugout.com)\ncc [~Kyran] [~declan]\n\nTest on: [https://sandbox.altv.com/dugout/]",
-        "assignee": "frank",
-        "status": "Code Test"
-    },
-    {
-        "key": "MENA-1",
-        "summary": "ALTV Web V2: Dugout channel - Chat option missing from top navbar",
-        "description": null,
-        "assignee": "frank",
-        "status": "Code Test"
-    }
-]
+{
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 100,
+    "total": 1,
+    "issues": [
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "12423",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/12423",
+            "key": "MENA-62",
+            "fields": {
+                "summary": "Dugout MENA - When clicked Mena video links going to wrong video first time",
+                "description": "Steps to reproduce ([~maricel] trying to reproduce now)\r\n\r\nclick on a MENA video link link (as supplied by Sharifa)\r\n\r\nExpected result: Video relating to the link title opens\r\nActual result: Completely difference video opens FIRST TIME ONLY - click on the lin again and it goes to the correct video\r\n\r\ncc [~Kyran] [~declan]",
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10013",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "Code Test",
+                    "id": "10013",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        }
+    ]
+}

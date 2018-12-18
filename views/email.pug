@@ -43,13 +43,12 @@ html(lang="en")
                             Assignee
 
                 tbody
-                    each val in tickets
+                    each val in tickets.issues
                         tr
                             td(cellpadding="10")
                                 a(href='https://emergentdatagroup.atlassian.net/browse/' + val.key)= val.key
-                            td= val.summary
-
-                            td= val.assignee
+                            td= val.fields.summary
+                            td= val.fields.assignee.name
 
 
             p.
@@ -69,10 +68,7 @@ html(lang="en")
                     td.
                         Commit
                     td= commit
-                tr
-                    td.
-                        Date
-                    td= date
+
                 tr
                     td.
                         Deployed at

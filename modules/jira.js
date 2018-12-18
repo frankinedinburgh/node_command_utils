@@ -51,6 +51,36 @@ const fetchTickets = (query) => {
 };
 
 
+const fetchTicketsByPost = (url, query) => {
+	return new Promise(function(resolve, reject){
+		request(url, {
+			method: 'POST',
+			json: true,
+			auth: {
+				username: process.env.JIRA_USERNAME,
+				password: process.env.JIRA_PASSWORD
+			},
+			body: {
+				jql: query,
+				startAt:0,
+				maxResults:-1,
+				fields:["summary", "description", "assignee", "status"]
+
+			},
+		}, (error, response, body) => {
+
+			if(error) reject(error);
+
+			if(response.statusCode !== 200) reject(`ERROR for => ${process.env.JIRA_PASSWORD}\n` + response.url + '\n' +response.statusMessage);
+
+			resolve(body);
+
+		});
+	});
+};
+
+
+
 const postComment = (ticket, comment) => {
 
     const options = {
@@ -85,8 +115,10 @@ const postComment = (ticket, comment) => {
 
 
 
+
 module.exports = {
     summary,
 		fetchTickets,
-    postComment
+    postComment,
+	  fetchTicketsByPost
 };

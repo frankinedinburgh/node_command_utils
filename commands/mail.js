@@ -2,25 +2,27 @@ const pug = require('pug')
 const path = require('path')
 const nodemailer = require('nodemailer');
 require('dotenv').config({path: path.join(__dirname, '../.env')})
-const tickets = require('./tickets.json')
+const tickets = require('./tickets.json');
 const emails = require('../modules/emails')
 const timeOfCommit = require('../modules/time_of_commit')
 const { getBranch } = require('../modules/get_branch')
 const size = require('../modules/size')
 const currentTime = require('../modules/current_time')
+const version = require('../modules/version_deployed.js');
 
-
+//console.log(tickets)
+//process.exit();
 
 
 getBranch().then(res => {
 	return res;
 }).then(data => {
-	timeOfCommit().then(res => {
-		const obj = Object.assign(res, data);
+	version().then(res => {
+		const obj = Object.assign({version: res}, data);
 		const deployedAt= currentTime();
-		const {branch, commit, date, time} = obj;
+		const {branch, commit, version } = obj;
 		const weight = size(path.join(process.env.DIR, '/dist'));
-		const message = `\n<-- branch: ${branch} commit: ${commit} -->`;
+		const message = version;
 		const options = {
 			debug: false,
 			pretty: true
@@ -44,7 +46,7 @@ getBranch().then(res => {
 				tickets,
 				branch,
 				weight,
-				date,
+				//date,
 				commit,
 				time: deployedAt,
 				message
