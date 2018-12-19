@@ -18,7 +18,7 @@ if(process.env.CC && process.env.CC === 'all') {
 			//'cian@altv.com',
 			//'balazs@altv.com',
 			'frank@altv.com',
-			//'nithin@altv.com',
+			'nithin@altv.com',
 			//'esidor@altv.com',
 		],
 		to: [

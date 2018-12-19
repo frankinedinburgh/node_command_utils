@@ -1,17 +1,17 @@
 {
-    "expand": "names,schema",
+    "expand": "schema,names",
     "startAt": 0,
     "maxResults": 100,
-    "total": 1,
+    "total": 7,
     "issues": [
         {
             "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
-            "id": "12423",
-            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/12423",
-            "key": "MENA-62",
+            "id": "12420",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/12420",
+            "key": "MENA-61",
             "fields": {
-                "summary": "Dugout MENA - When clicked Mena video links going to wrong video first time",
-                "description": "Steps to reproduce ([~maricel] trying to reproduce now)\r\n\r\nclick on a MENA video link link (as supplied by Sharifa)\r\n\r\nExpected result: Video relating to the link title opens\r\nActual result: Completely difference video opens FIRST TIME ONLY - click on the lin again and it goes to the correct video\r\n\r\ncc [~Kyran] [~declan]",
+                "summary": "MEAN V2 => integrate CAPI api for Dugout mean playlist",
+                "description": "*Expected result*\r\nall data for the playlist should be requested from capi\r\nhttps://capi.altv.com/jw_dug_playlists/sandbox/' + id + '.json\r\n\r\n*Actual Result*\r\nthe playlist is requested from \r\nhttps://v2sbapi.altv.com/v3/dugoutmena/' + id + '?type=jw",
                 "assignee": {
                     "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
                     "name": "frank",
@@ -29,11 +29,251 @@
                     "timeZone": "Europe/London"
                 },
                 "status": {
-                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10013",
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
                     "description": "",
                     "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
-                    "name": "Code Test",
-                    "id": "10013",
+                    "name": "QA",
+                    "id": "10011",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "12419",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/12419",
+            "key": "MENA-60",
+            "fields": {
+                "summary": "MENA V2 => display Ads display on the right overlaying the video when in arabic",
+                "description": "*Expected results*\r\non the left of the player when direction is right to left\r\n\r\n*Actual Result*\r\nThe display ad is on the right on top of the player\r\n",
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "QA",
+                    "id": "10011",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "12331",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/12331",
+            "key": "MENA-56",
+            "fields": {
+                "summary": "V2 Embed Code needs to return url as traffic source in JW Player (which is not assets.altv.com)",
+                "description": "As a user (Dugout) i want to be able to see the traffic source (URL) of each third party which uses our embed code (iframe from Dugout MENA site) on their websites.\n\n*Acceptance criteria:*\nTraffic source is not assets.altv.com\nTraffic source is individual site domain (filgoal, filfan etc...)\nNew traffic source is likely to be Google analytics\n\ncc [~frank] [~declan] [~Kyran]",
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "QA",
+                    "id": "10011",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "11776",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/11776",
+            "key": "MENA-33",
+            "fields": {
+                "summary": "ALTV Web V2: MENA -> Labels flashing up for a second before actual titles display on initial page load.",
+                "description": null,
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "QA",
+                    "id": "10011",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "11656",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/11656",
+            "key": "MENA-24",
+            "fields": {
+                "summary": "Web: Height of the player overlaps on display ad ",
+                "description": "As a user i want the player and ad NOT to overlap (currently the width of the player overlaps on display ad)\r\n\r\n*Acceptance criteria:*\r\n\r\n* Ad and player are not overlapping and are clearly delineated.\r\n\r\n* When scrolling they stay apart\r\n\r\n* When clicked they stay apart",
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "QA",
+                    "id": "10011",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "11603",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/11603",
+            "key": "MENA-21",
+            "fields": {
+                "summary": "Web: All links on site point to v2.altv.com",
+                "description": null,
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "QA",
+                    "id": "10011",
+                    "statusCategory": {
+                        "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "11403",
+            "self": "https://emergentdatagroup.atlassian.net/rest/api/2/issue/11403",
+            "key": "MENA-3",
+            "fields": {
+                "summary": "ALTV Web V2: Dugout MENA - arrows appearing on carousels when no more videos are available",
+                "description": null,
+                "assignee": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/user?accountId=557058%3A5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "name": "frank",
+                    "key": "frank",
+                    "accountId": "557058:5d2f814d-b642-411c-abf7-b7ec4eede1bb",
+                    "emailAddress": "frank@altv.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=48&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D48%26noRedirect%3Dtrue",
+                        "24x24": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=24&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D24%26noRedirect%3Dtrue",
+                        "16x16": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=16&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D16%26noRedirect%3Dtrue",
+                        "32x32": "https://avatar-cdn.atlassian.com/0021e715cff3b6f3f28bb3f90be17bd7?s=32&d=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F0021e715cff3b6f3f28bb3f90be17bd7%3Fd%3Dmm%26s%3D32%26noRedirect%3Dtrue"
+                    },
+                    "displayName": "frank hague",
+                    "active": true,
+                    "timeZone": "Europe/London"
+                },
+                "status": {
+                    "self": "https://emergentdatagroup.atlassian.net/rest/api/2/status/10011",
+                    "description": "",
+                    "iconUrl": "https://emergentdatagroup.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "QA",
+                    "id": "10011",
                     "statusCategory": {
                         "self": "https://emergentdatagroup.atlassian.net/rest/api/2/statuscategory/4",
                         "id": 4,
